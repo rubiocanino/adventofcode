@@ -1,5 +1,5 @@
 # Get Instruccions to take santa
-print("You need to give the instructions between [-> 'instructions' <-] ")
+# print("You need to give the instructions between [-> 'instructions' <-] ")
 print("---------------------------------------------------")
 # You only need to change the variable for the inputs
 # I try to do it with the input but weird stuff happen when you read the input
