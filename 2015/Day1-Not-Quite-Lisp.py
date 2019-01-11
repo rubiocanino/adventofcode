@@ -16,10 +16,27 @@ print("---------------------------------------------------")
 upStairs = instructions.count('(')
 # Count level down
 downStairs = instructions.count(')')
-print("Up stairs: " + str(upStairs))
-print("Down stairs: " + str(downStairs))
-print
-print("---------------------------------------------------")
+
+level = 1
+arrayInstructions = list(instructions)
+for index, value in enumerate(arrayInstructions):
+
+    if level == 0:
+        print index
+        # break 
+
+    if value == '(':
+        level+= 1
+    else:
+        level-= 1
+
+
+
+print len(arrayInstructions)
+# print("Up stairs: " + str(upStairs))
+# print("Down stairs: " + str(downStairs))
+# print
+# print("---------------------------------------------------")
 print
 print('Santa is level: '+ (str(upStairs-downStairs)))
 
